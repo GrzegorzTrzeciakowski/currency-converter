@@ -21,6 +21,10 @@ https://github.com/GrzegorzTrzeciakowski/currency-converter.git
 4. Click the "Convert!" button to calculate the equivalent amount in the selected currency.
 5. View the result displayed below the form in the "Result" section.
 6. To clear the form and start over, click the "Clear" button.
+   
+## Author
+
+The project was created by [Grzegorz Trzeciakowski](https://github.com/GrzegorzTrzeciakowski).
 
 ## Contributing
 
