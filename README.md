@@ -4,7 +4,7 @@ This is a simple currency converter web application that allows users to convert
 
 ## Demo
 
-https://github.com/GrzegorzTrzeciakowski/currency-converter.git
+https://grzegorztrzeciakowski.github.io/currency-converter/
 
 ## Features
 
