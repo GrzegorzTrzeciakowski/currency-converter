@@ -8,13 +8,13 @@ function calculateAmount(amount, rate) {
     return amount * rate;
 }
 
-function updateResult(resultElement, result) {
-    resultElement.innerText = result.toFixed(2);
+function updateResult(resultElement, amountInPLN, currency, result) {
+    resultElement.innerText = `${amountInPLN} PLN = ${result.toFixed(2)} ${currency}`;
 }
 
 function clearForm(amountElement, resultElement) {
     amountElement.value = "";
-    resultElement.innerText = "N/A";
+    resultElement.innerText = "";
 }
 
 formElement.addEventListener("submit", (event) => {
@@ -24,10 +24,9 @@ formElement.addEventListener("submit", (event) => {
     const currency = parseFloat(currencyElement.value);
 
     const result = calculateAmount(amountInPLN, currency);
-    updateResult(resultElement, result);
+    updateResult(resultElement, amountInPLN, currencyElement.selectedOptions[0].text, result);
 });
 
 clearButton.addEventListener("click", () => {
     clearForm(amountInPLNElement, resultElement);
 });
-
