@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Przelicznik walut</title>
-    <link rel="icon" href="images/computer.png">
-    <meta property="og:image" content="images/og.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="images/computer.png" />
+    <meta property="og:image" content="images/og.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
     <script defer src="js/script.js"></script>
+  </head>
 
-</head>
-
-<body class="body">
+  <body class="body">
     <div class="calculator">
-        <h2 class="calculator__title">Przelicznik walut</h2>
-        <form class="form js-form">
-            <fieldset>
-                <p class="form__label">
-                    <label>
-                        <span class="form__labelText">Kwota:</span>
-                        <input class="form__field js-amount" required type="number" min="1" step="any">
-                    </label>
-                </p>
+      <h2 class="calculator__title">Przelicznik walut</h2>
+      <form class="form js-form">
+        <fieldset>
+          <p class="form__label">
+            <label>
+              <span class="form__labelText">Kwota:</span>
+              <input
+                class="form__field js-amount"
+                required
+                type="number"
+                min="1"
+                step="any"
+              />
+            </label>
+          </p>
 
-                <p class="form__label">
-                    <span class="form__labelText">Waluta:</span>
-                    <select class="form__field js-currency">
-                        <option value="4.15">Euro</option>
-                        <option value="3.75">Dolar amerykański</option>
-                        <option value="6.15">Funt brytyjski</option>
-                    </select>
-                </p>
+          <p class="form__label">
+            <span class="form__labelText">Waluta:</span>
+            <select class="form__field js-currency">
+              <option value="4.15">Euro</option>
+              <option value="3.75">Dolar amerykański</option>
+              <option value="6.15">Funt brytyjski</option>
+            </select>
+          </p>
 
-                <p class="form__label">
-                    <button type="submit" class="form__button">Przelicz!</button>
-                    <button type="reset" class="form__button js-clear">Wyczyść</button>
-                </p>
-            </fieldset>
-        </form>
-        <p class="calculator__result">
-            Wynik: <span class="js-result">N/A</span>
-        </p>
-
+          <p class="form__label">
+            <button type="submit" class="form__button">Przelicz!</button>
+            <button type="reset" class="form__button js-clear">Wyczyść</button>
+          </p>
+        </fieldset>
+      </form>
+      <p class="calculator__result">
+        Wynik: <span class="js-result">N/A</span>
+      </p>
     </div>
-
-</body>
-
+  </body>
 </html>
